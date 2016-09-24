@@ -6,4 +6,4 @@ gem 'rake'
 gem 'minitest'
 gem 'rack-test'
 
-gem 'rakuten_web_service'
+gem 'rakuten_web_service','1.0.0'

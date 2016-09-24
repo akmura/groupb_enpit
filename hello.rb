@@ -18,8 +18,15 @@ get '/recipe' do
    erb :recipe
 end 
 
-get '/category' do
-   erb :category
+get '/category' do\
+  RakutenWebService.configuration do |c|
+    c.application_id = ENV["APPID"]
+    c.affiliate_id = ENV["AFID"]
+  end
+  #resipe = RakutenWebService::Resipe.new() 
+  @rankings = RakutenWebService::Recipe.large_categories
+  #rankings = resipe.large_categories
+ erb :category
 end 
 
 get '/books/' do

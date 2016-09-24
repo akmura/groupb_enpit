@@ -1,1 +1,4 @@
 カテゴリ表示ページ
+ <% @rankings.each do |ranking| %> 
+<p><%= ranking.id %>|<%= ranking.name %></p>
+<% end %>
