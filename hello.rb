@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'rakuten_web_service'
+require 'net'
+require 'net/http'
+require 'uri'
+require 'rakuten_web_service/client'
+require 'rakuten_web_service/response'
+require 'rakuten_web_service/error'
 
 #参考: https://github.com/k2works/sinatra_rakuten_api
 
