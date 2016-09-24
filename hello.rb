@@ -14,6 +14,14 @@ get '/' do
   erb :item_ranking
 end
 
+get '/recipe' do
+   erb :recipe
+end 
+
+get '/category' do
+   erb :category
+end 
+
 get '/books/' do
   RakutenWebService.configuration do |c|
     c.application_id = ENV["APPID"]
