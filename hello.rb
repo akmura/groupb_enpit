@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'rakuten_web_service'
+require 'net'
+require 'net/http'
+require 'uri'
+require 'rakuten_web_service/client'
+require 'rakuten_web_service/response'
+require 'rakuten_web_service/error'
 
 #参考: https://github.com/k2works/sinatra_rakuten_api
 
@@ -18,8 +24,15 @@ get '/recipe' do
    erb :recipe
 end 
 
-get '/category' do
-   erb :category
+get '/category' do\
+  RakutenWebService.configuration do |c|
+    c.application_id = ENV["APPID"]
+    c.affiliate_id = ENV["AFID"]
+  end
+  #resipe = RakutenWebService::Resipe.new() 
+  @rankings = RakutenWebService::Recipe.large_categories
+  #rankings = resipe.large_categories
+ erb :category
 end 
 
 get '/books/' do

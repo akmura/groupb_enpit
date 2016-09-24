@@ -1,19 +1,10 @@
+<h2>カテゴリ表示ページ</h2>
 <TABLE>
   <CAPTION>レシピ一覧</CAPTION>
   <TBODY>
-    <TR><TH>30</TH><TD>人気メニュー</TD></TR>
-    <TR><TH>31</TH><TD>定番の肉料理</TD></TR>
-    <TR><TH>32</TH><TD>定番の魚料理</TD></TR>
-    <TR><TH>33</TH><TD>卵料理</TD></TR>
-　　<TR><TH>14</TH><TD>ご飯もの</TD></TR>
-　　<TR><TH>15</TH><TD＞パスタ</TD></TR>
-　　<TR><TH>16</TH><TD>麺、粉物料理</TD></TR>
-    <TR><TH>41</TH><TD>中華料理</TD></TR>
-    <TR><TH>42</TH><TD>韓国料理</TD></TR>
-    <TR><TH>43</TH><TD>イタリア料理</TD></TR>
-    <TR><TH>44</TH><TD>フランス料理</TD></TR>
-　　<TR><TH>25</TH><TD>西洋料理</TD></TR>
-　　<TR><TH>46</TH><TD＞エスニック料理</TD></TR>
-　　<TR><TH>47</TH><TD>沖縄料理</TD></TR>
+ <% @rankings.each do |ranking| %> 
+<tr><th><%= ranking.id %></th><td><%= ranking.name %></td></tr>
+<% end %>
   </TBODY>
-</TABLE>カテゴリ表示ページ
+</TABLE>
+
