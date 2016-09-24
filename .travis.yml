@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: IkrQz0KIzbOWzNdeGIpmQoFI0bIpKkYt5ANQk3VmeL7yhSSLvyxW5Qwz9Sv1IXKUIYNeQojS+IlG6H5fR6I1HHoQIgZIXWp4FirXsZCEebnwPk9cox2JUu1ywqHRv4v0Z+3CTHTzvLgDXNH2SKPTJVcwUa5kQCWOu6H5o+AAksZUqAzez3s7gyhNotQ11uaMoYoZ2/rRGFvYc/+9Q/fWvP68nd49Sj0wwuCBXXDLynAaED850J+JllJ7JVdKt1yNhN972AZJKw8sGwn9ilrvVxWQeqnkHANYxBY7O1oKSXebdxi4rQhYBGUfhCD8pWlsJylNUODFQHCDhpLgDSRSxA8d0y7sELVdNStuZCSgk0JH9tbDYpaunC1tJ41WZu+6RmsG51HbjRYDpoj6vTRq5Q8fAUWMwp6GQX1vsWawMG1WDEP1PYmo0sECOA6HYjEZkbk791prCfcsatQ7LWdeqaJoFC+/UNwWuSpZi/tSj8CSuQzpgt5sckG6P/aYBGVlQWeH5GF+74FLqxsPmNglYqj7Myu/HRTL/QDlnzs+q/cU9MHXmIfZ9w3TiG2OUqK2pEBk6Km1JZVp/I8yAvbeKGT7/+3VVU1i9z54tnmaIH2l2lZmfNCSsc9Mckr3pBdaSdpeD+tSjIcGXYIregcHX/p0/s0LVhmaai8unfC/jp4=
+  app: desolate-ravine-82903
+  on:
+    repo: tantan5/groupb_enpit
