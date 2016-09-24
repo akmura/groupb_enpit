@@ -1,4 +1,10 @@
-カテゴリ表示ページ
+<h2>カテゴリ表示ページ</h2>
+<TABLE>
+  <CAPTION>レシピ一覧</CAPTION>
+  <TBODY>
  <% @rankings.each do |ranking| %> 
-<p><%= ranking.id %>|<%= ranking.name %></p>
+<tr><th><%= ranking.id %></th><td><%= ranking.name %></td></tr>
 <% end %>
+  </TBODY>
+</TABLE>
+
